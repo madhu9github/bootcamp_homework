@@ -44,13 +44,9 @@ function circleValues() {
 function circleValues1(r) {
     const obj = new circle(r)
     obj.print();
+    console.log("Using setRadius() to change radius to 10");
     obj.setRadius(10);
     obj.print();
-    obj.setRadius(20);
-    obj.print();
-    console.log("area is: " + obj.getArea());
-    console.log("perimeter is: " + obj.perimeter);
-    console.log("perimeter is: " + obj.getPerimeter());
 }
 circleValues();
 
