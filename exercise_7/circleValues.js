@@ -7,6 +7,7 @@ class circle {
     }
 
     setRadius(r) {
+        console.log("Using setRadius() to change radius to: " + r);
         this.radius = r;
         this.area = Math.PI * r * r;
         this.perimeter = 2 * Math.PI * r;
@@ -22,8 +23,8 @@ class circle {
 
     print() {
 
-        console.log("area is: " + this.getArea());
-        console.log("perimeter is: " + this.getPerimeter());
+        console.log("Area of a circle with radius " + this.radius + " is: " + this.getArea());
+        console.log("Perimeter of a circle with radius " + this.radius + " is: " + this.getPerimeter());
     }
 
     radius;
@@ -33,19 +34,18 @@ class circle {
 }
 
 function circleValues() {
-    const ps = require("prompt-sync");
-    const user_prompt = ps();
-
-    let radius = user_prompt("Enter the radius: ");
-
+    console.log("Using Class and methods to find the area and perimeter of a circle.")
+    const userPrompt = require("prompt-sync")();
+    let radius = userPrompt("Enter the radius: ");
     circleValues1(radius);
 }
 
 function circleValues1(r) {
     const obj = new circle(r)
     obj.print();
-    console.log("Using setRadius() to change radius to 10");
     obj.setRadius(10);
+    obj.print();
+    obj.setRadius(3);
     obj.print();
 }
 circleValues();
