@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form Styling</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        /* 
+        -May want to add "border-box for "box-sizing so padding does not affect width
+        -Reset margin and padding 
+       */
+      }
+
+      body {
+        /* 
+          -Background color is #344a72
+        */
+        background-color: #344a72;
+      }
+
+      a {
+        /* 
+        Underlined links are ugly :)
+       */
+      }
+
+      #container {
+        /* 
+        -Remember, margin: auto on left and right will center a block element 
+        -I would also set a "max-width" for responsiveness
+        -May want to ad
+        */
+        margin: 30px 650px 50px 650px; 
+      }
+
+      .form-wrap {
+        /* 
+          This is the white area around the form and heading, etc
+          DONE
+        */
+        background-color:white;
+        text-align:left;
+        padding:5px 5px 5px 15px;
+        width: 250px;
+        height:400px;
+
+      }
+
+      .form-wrap h1,
+      .form-wrap p {
+        /* 
+          May want to center these
+          DONE
+        */
+        text-align:center;
+      }
+
+      .form-wrap .form-group {
+        /* 
+          Each label, input is wrapped in .form-group
+        */
+      }
+
+      .form-wrap .form-group label {
+        /* 
+          Label should be turned into a block element
+          DONE
+        */
+        font-size: small;
+      }
+
+      .form-wrap .form-group input {
+        /* 
+          Inputs should reach accross the .form-wrap 100% and have some padding
+        */
+      }
+
+      .form-wrap button {
+        /* 
+          Button should wrap accross 100% and display as block
+          Background color for button is #49c1a2
+        */
+      }
+
+      .form-wrap button:hover {
+        /* 
+          Hover background color for button is #37a08e
+          DONE
+        */
+        
+      }
+
+      .form-wrap .bottom-text {
+        /* 
+          Bottom text is smaller
+          DONE
+        */
+      }
+
+      footer {
+        /* 
+        Should be centered
+        DONE
+       */
+      }
+
+      footer a {
+        /* 
+          Footer link color is #49c1a2
+          DONE
+        */
+      }
+      #form-wrap{
+
+        
+
+
+      }
+  
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="form-wrap">
+        <h1 style =  "justify-content:center;font-weight: lighter;">Sign Up</h1>
+        <p style =  "justify-content:center;font-size:small;">It's free and only takes a minute</p>
+        <form>
+          <div class="form-group">
+            <label style="display: block;" for="first-name">First Name</label>
+            <input type="text" name="firstName" id="first-name" />
+          </div>
+          <div class="form-group">
+            <label style="display: block;" for="last-name">Last Name</label>
+            <input type="text" name="lastName" id="last-name" />
+          </div>
+          <div class="form-group">
+            <label style="display: block;" for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-group">
+            <label style="display: block;" for="password">Password</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <div class="form-group">
+            <label style="display: block;" for="password2">Confirm Password</label>
+            <input type="password" name="pasword2" id="password2" />
+          </div>
+          <div class="form-group">
+          <button style = "background-color:#37a08e;height:25px;width:150px;"type="submit" class="btn">Sign Up</button>
+          <p style ="justify-content:centerleft;height:25px;width:210px; font-size: x-small;" class="bottom-text">
+            By clicking the Sign Up button, you agree to our
+            <a href="#">Terms & Conditions</a> and
+            <a href="#">Privacy Policy</a>
+          </p>
+        </div>
+        </form>
+      </div>
+      <footer>
+        <p style =  "justify-content:center;color:white;">Already have an account? <a href="#" style ="color:#49c1a2;">Login Here</a></p>
+      </footer>
+    </div>
+  </body>
+</html>
