@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-group label {
+            display: block;
+        }
+
+        .flex {
+            text-align: left;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .required::after {
+            content: " *";
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="justify-content:left;font-weight:bolder;">Terms and Conditions</h1>
+    <h2 style="justify-content:left;font-weight:bolder;">Please read our Terms and Condiitons and sign below.</h2>
+    <div class="flex">
+        <div class="form-group">
+            <label class="required">First name</label>
+            <input style="height:25px;width:127px;" type="text">
+        </div>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+        <div class="form-group">
+            <label class="required">Last name</label>
+            <input style="height:25px;width:127px;" type="text">
+        </div>
+    </div>
+    <br>
+    <div class="form-group">
+        <label class="required">Email</label>
+        <input style="height:25px;width:295px" type="text">
+    </div>
+    <br>
+    <div class="form-group">
+        <label>Terms and Conditions</label>
+        <textarea id="Address" name="Address"
+            placeholder="You agree to use our website for legitimate purposes and not for any illegal or unauthorized purpose, including without limitation, in violation of any intellectual property or privacy law."
+            style="height:100px; width:300px; font-weight: bold; font-style: normal;font-family:'Times New Roman', Times, serif; background-color: lightgray;"
+            readonly></textarea>
+    </div>
+
+    </label>
+
+
+    </div>
+    <br>
+    <div class="form-group">
+        <label class="required">Please sign here</label>
+        <input style="height:25px;width:295px" type="text">
+        <br>
+        <br>
+        <button>clear signature pad</button>
+    </div>
+    <br>
+    <button>submit</button>
+    <!--/* <div>/*
+        <textarea col="10"
+    </div>
+    */-->
+
+</body>
+
+</html>

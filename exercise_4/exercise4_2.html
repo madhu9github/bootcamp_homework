@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-group label {
+            display: block;
+        }
+
+        .flex {
+            text-align: left;
+            display: flex;
+            justify-content: flex-start;
+
+
+        }
+
+        .required::after {
+            content: " *";
+            color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1 style="justify-content:left;font-weight: lighter;">Contact Us Extended</h1>
+    <div class="flex">
+        <div class="form-group">
+            <label class="required">First name</label>
+            <input style="height:25px;width:127px;" type="text">
+
+
+        </div>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+        <div class="form-group">
+            <label class="required">Last name</label>
+            <input style="height:25px;width:127px" type="text">
+        </div>
+    </div>
+    <br>
+    <div class="form-group">
+        <label class="required">Email</label>
+        <input style="height:25px;width:300px" type="text">
+    </div>
+    <br>
+    <div class="form-group">
+        <label class="required">Phone number</label>
+        <input style="height:25px;width:300px" type="text">
+    </div>
+    <br>
+    <div class="form-group">
+        <label class="required">Address</label>
+        <textarea id="Address" name="Address" placeholder="Address here..."
+            style="height:100px; width:300px"></textarea>
+    </div>
+    <br>
+    <div class="form-group">
+        <label>City</label>
+        <input style="height: 25px;width:300px" type="text">
+    </div>
+    <br>
+    <div class="form-group">
+        <p>State/Province</p>
+        <form>
+            <select style="height:25px;width:300px" id="State/Province" name="State/Province">
+                <option value="CA">California</option>
+                <option value="AK">Arkansas</option>
+                <option value="MI">Minnesota</option>
+            </select>
+        </form>
+    </div>
+    <br>
+    <div class="form-group-a">
+        <p>Country</p>
+        <form>
+            <select style="height:25px;width:300px" id="Country" name="Country">
+                <option value="US">United States</option>
+                <option value="IN">India</option>
+                <option value="AUS">Australia</option>
+            </select>
+        </form>
+        <br>
+        <div class="form-group">
+            <label>Zip/Postal Code</label>
+            <input type="number">
+        </div>
+        <br>
+        <div class="form-group">
+            <label>Comments and Questions</label>
+            <textarea id="Comments and Questions" name="Comments and Questions" placeholder="Write something.."
+                style="height:150px; width:300px"></textarea>
+        </div>
+
+        <button>submit</button>
+        <!--/* <div>/*
+        <textarea col="10"
+    </div>
+    */-->
+
+</body>
+
+</html>
